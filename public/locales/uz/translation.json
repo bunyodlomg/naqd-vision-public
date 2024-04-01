@@ -1,0 +1,36 @@
+{
+  "heading": "Real ko'rsatkichlar, brendingiz raqamlarda  ",
+  "subheading": "O'z mijozlaringizni aniqlang va ularni samarali tarzda yo'naltiring",
+  "click": "Ro'yhatdan o'tish",
+  "hero": "Brendingizning sifatli reklama tahlili",
+  "subhero": "Brendingiz reklama ko'rsatkichlarini kuzatib boring!",
+  "description": {
+    "line1": "Veb service xizmati",
+    "line2": "Veb service turlari"
+  },
+  "navbar": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "contact": "Demo ochish",
+    "login": "Kirish"
+  },
+  "feature": {
+    "heading": "Sun'iy intellekt orqali reklama tahlili",
+    "cardheading": "Real vaqtda video tahlili",
+    "cardheading2": "Ma'lumotlarni tahlil qilib borish",
+    "cardheading3": "Shaxsiy sahifada ma'lumotlarni kuzatish",
+    "button": "Batafsil"
+  },
+  "contact": {
+    "heading": "So'rov qoldiring va biz siz bilan bog'lanamiz",
+    "name": "Ismingiz",
+    "company": "Kompaniya",
+    "number": "Telefon raqam",
+    "message": "Xabar",
+    "button": "Yuborish"
+  },
+  "footer": {
+    "heading": "Sifatli reklama tahlilini taqdim etamiz",
+    "location": "Farg'ona viloyati, Qo'qon shahri"
+  }
+}
