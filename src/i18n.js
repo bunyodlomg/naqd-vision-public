@@ -6,29 +6,8 @@ i18next
     .use(LanguageDetector)
     .use(initReactI18next).use(Backend)
     .init({
-        debug: true,
+        debug: false,
+        returnObjects: true,
         fallbackLng: 'en',
-        returnObjects:true,
-    //     lng: 'uz',
-    //     resources: {
-    //         en: {
-    //             translation: {
-    //                 welcome: 'welcome to vision ai',
-    //                 description: {
-    //                     line1:'web services',
-    //                     line2:'web services awailable',
-    //                 }
-    //           },
-    //       },
-    //         uz: {
-    //             translation: {
-    //               welcome:' vision ai ga xush kelibsiz!'
-    //           },
-    //       },
-    //         ru: {
-    //             translation: {
-    //               welcome:'добро пожаловать на платформу ai'
-    //           },
-    //       },
-    //   }
+        lng: 'en',
     });

@@ -17,6 +17,7 @@ const SwitcherBtn = () => {
     setSelectedLanguage(e)
     i18n.changeLanguage(e);
     setToggle(false)
+    console.log(e);
   };
   const langToggle = () => {
     setToggle(!toggle)

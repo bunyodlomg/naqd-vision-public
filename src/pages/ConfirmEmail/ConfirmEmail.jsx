@@ -14,7 +14,6 @@ function ConfirmEmail() {
             }).catch((err) => {
                 setMessage(err)
             })
-        console.log('ishladi!');
     }, [])
 
     return (
