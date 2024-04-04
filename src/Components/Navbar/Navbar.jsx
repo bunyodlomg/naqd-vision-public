@@ -58,7 +58,7 @@ const Navbar = () => {
             <BtnLang />
             <a
               className={`md:my-0 my-6 font-semibold`}
-              href="http://localhost:5173/dashboard/auth/login"
+              href="https://dashboard.naqdvision.uz/auth/login"
             >
               <button className="primary-btn font-light p-2 px-4 md:px-8">
                 {t(login)}
