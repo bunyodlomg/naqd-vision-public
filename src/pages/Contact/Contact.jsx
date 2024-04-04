@@ -2,24 +2,19 @@ import axios from "axios";
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import { useState } from "react";
-import { api } from "../../layout/api";
+import { API } from "../../layout/api";
 import { useTranslation } from 'react-i18next'
 const Contact = () => {
   const { t } = useTranslation()
-  const [post, setPost] = useState({
-    name: "",
-    company: "",
-    phone: "",
-    message: "",
-  });
-  const handleInput = (e) => {
-    setPost({ ...post, [e.target.name]: e.target.value });
-  };
+  const [nameForm, setNameForm] = useState('')
+  const [companyName, setCompanyName] = useState('')
+  const [messageForm, setMessage] = useState('')
+  const [phone, setPhone] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${api}/contact/send`, { ...post })
+      .post(`${API}/contact/send`, { nameForm, companyName, messageForm, phone })
       .then((response) => console.log(response.data.message))
       .catch((err) => console.log(err));
   };
@@ -36,7 +31,7 @@ const Contact = () => {
             </label>
             <input className="dark:bg-slate-800 bg-inherit  dark:text-white shadow-md appearance-none rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline border-none" id="firstName" type="text" placeholder={t(name)} required
               onChange={(e) =>
-                setFirstName(e.target.value)
+                setNameForm(e.target.value)
               } />
           </div>
           <div className="mb-4">
@@ -45,7 +40,7 @@ const Contact = () => {
             </label>
             <input className="dark:bg-slate-800 bg-inherit dark:text-white shadow-md border-none appearance-none  rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" id="companyName" type="text" placeholder={t(company)} required
               onChange={(e) => {
-                setLastName(e.target.value)
+                setCompanyName(e.target.value)
               }} />
           </div>
           <label className="block text-sm font-bold mb-2" htmlFor="phone">
@@ -60,14 +55,14 @@ const Contact = () => {
             defaultCountry="uz"
             onChange={
               (e) => {
-                const t = {
+                const tel = {
                   target: {
                     name: "phone",
                     id: "phone",
                     value: e
                   }
                 }
-                handleInput(t)
+                setPhone(tel.target.value)
               }
             }
           />
@@ -77,7 +72,7 @@ const Contact = () => {
             </label>
             <textarea className="dark:bg-slate-800 bg-inherit dark:text-white shadow-md appearance-none rounded w-full py-2 px-3 text-gray-900 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="textarea" type="text" placeholder={t(message)} required
               onChange={(e) =>
-                setPassword(e.target.value)
+                setMessage(e.target.value)
               } />
           </div>
           <div className="flex items-center justify-between">
