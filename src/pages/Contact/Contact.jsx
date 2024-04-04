@@ -4,24 +4,30 @@ import 'react-international-phone/style.css';
 import { useState } from "react";
 import { API } from "../../layout/api";
 import { useTranslation } from 'react-i18next'
+import { toast } from "react-toastify";
+import { ToastContainer } from 'react-toastify';
 const Contact = () => {
   const { t } = useTranslation()
   const [nameForm, setNameForm] = useState('')
   const [companyName, setCompanyName] = useState('')
   const [messageForm, setMessage] = useState('')
   const [phone, setPhone] = useState('')
-
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${API}/contact/send`, { nameForm, companyName, messageForm, phone })
-      .then((response) => console.log(response.data.message))
-      .catch((err) => console.log(err));
+      .post(`${API}/request-demo/send`, { name: nameForm, company: companyName, message: messageForm, phone: phone })
+      .then((response) =>
+        toast.success(response.data.message, { position: "top-center" })
+      )
+      .catch((err) =>
+        toast.error('Please try again later!', { position: "top-center" })
+      );
   };
   const { heading, name, company, number, message, button } = t('contact')
 
   return (
     <div className="container mt-28 ">
+      <ToastContainer />
       <div className=" mx-auto max-w-sm">
         <form onSubmit={handleSubmit} autoComplete="off" data-aos="zoom-out-down" className="dark:bg-slate-800 bg-slate-100 rounded px-8   pb-8 shadow-2xl">
           <h1 className="py-10 font-bold text-xl dark:text-white text-slate-700 text-center"> {t(heading)}</h1>
