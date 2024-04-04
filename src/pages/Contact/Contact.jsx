@@ -9,13 +9,13 @@ import { ToastContainer } from 'react-toastify';
 const Contact = () => {
   const { t } = useTranslation()
   const [nameForm, setNameForm] = useState('')
-  const [companyName, setCompanyName] = useState('')
+  const [emailAddress, setEmailAddress] = useState('')
   const [messageForm, setMessage] = useState('')
   const [phone, setPhone] = useState('')
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${API}/request-demo/send`, { name: nameForm, company: companyName, message: messageForm, phone: phone })
+      .post(`${API}/request-demo/send`, { name: nameForm, email: emailAddress, message: messageForm, phone: phone })
       .then((response) =>
         toast.success(response.data.message, { position: "top-center" })
       )
@@ -23,7 +23,7 @@ const Contact = () => {
         toast.error('Please try again later!', { position: "top-center" })
       );
   };
-  const { heading, name, company, number, message, button } = t('contact')
+  const { heading, name, email, number, message, button } = t('contact')
 
   return (
     <div className="container mt-28 ">
@@ -42,11 +42,11 @@ const Contact = () => {
           </div>
           <div className="mb-4">
             <label className="block text-sm font-bold mb-2" htmlFor="companyName">
-              {t(company)}
+              {t(email)}
             </label>
-            <input className="dark:bg-slate-800 bg-inherit dark:text-white shadow-md border-none appearance-none  rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" id="companyName" type="text" placeholder={t(company)} required
+            <input className="dark:bg-slate-800 bg-inherit dark:text-white shadow-md border-none appearance-none  rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" id="companyName" type="email" placeholder={t(email)} required
               onChange={(e) => {
-                setCompanyName(e.target.value)
+                setEmailAddress(e.target.value)
               }} />
           </div>
           <label className="block text-sm font-bold mb-2" htmlFor="phone">

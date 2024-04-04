@@ -26,7 +26,7 @@
   "contact": {
     "heading": "Leave your request and we will contact you",
     "name": "Name",
-    "company": "Company name",
+    "email": "Email",
     "number": "Phone",
     "message": "Message",
     "button": "Send"
