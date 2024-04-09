@@ -1,6 +1,7 @@
 import i18next from "i18next";
 import { Trans, useTranslation } from "react-i18next";
 import bg from "../../assets/website/ai.webp";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -29,13 +30,13 @@ const Hero = () => {
               </p>
               {/* <h1>{i18next.t('welcome')}</h1> */}
               <div className="flex gap-6 z-10">
-                <button
+                <Link to={'https://dashboard.naqdvision.uz/auth/login'}
                   data-aos="fade-up"
                   data-aos-delay="500"
                   className="primary-btn"
                 >
                   {t("click")}
-                </button>
+                </Link>
               </div>
             </div>
             {/* image section */}

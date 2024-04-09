@@ -10,7 +10,7 @@
   },
   "navbar": {
     "home": "Bosh sahifa",
-    "services": "Xizmatlar",
+    "howworks": "Bu qanday ishlaydi",
     "contact": "Demo ochish",
     "login": "Kirish"
   },
@@ -32,5 +32,14 @@
   "footer": {
     "heading": "Sifatli reklama tahlilini taqdim etamiz",
     "location": "Farg'ona viloyati, Qo'qon shahri"
+  },
+  "how": {
+    "heading": "Bu qanday ishlaydi?  ",
+    "subheading": "Biz brendingiz reklamasini sun'iy intellekt yordamida tahlil qilib boramiz  ",
+    "first": "Led ekranda reklama roligi  ",
+    "two": "Video kamera orqali ma'lumot yig'ish  ",
+    "three": "Sun'iy intellekt orqali ko'z qarashlarini aniqlash  ",
+    "four": "Dashboard ma'lumot tahlili  "
+
   }
 }

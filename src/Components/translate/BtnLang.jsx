@@ -17,7 +17,6 @@ const SwitcherBtn = () => {
     setSelectedLanguage(e)
     i18n.changeLanguage(e);
     setToggle(false)
-    console.log(e);
   };
   const langToggle = () => {
     setToggle(!toggle)
@@ -36,7 +35,7 @@ const SwitcherBtn = () => {
         </button>
       </div>
 
-      {toggle && <div className="absolute left-0-52 md:right-0 z-10 mt-2 w-32 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-white dark:bg-gray-900" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+      {toggle && <div className="absolute left-0-52 md:right-0 z-10 mt-2 w-32 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-white dark:bg-gray-900" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
         <div className="py-1" role="none">
           {languages.map((lng) => (
             <button className="px-10 w-full border-none hover:text-slate-400 hover:cursor-pointer" key={lng.code} value={lng.code} onClick={e => handleChangeLanguage(e.target.value)}>

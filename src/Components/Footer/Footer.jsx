@@ -6,7 +6,7 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 import ScrollTop from "../Scrool/ScroolTop";
-import logo from "../../assets/website/l_och.png";
+import logo from "../../assets/website/logo.png";
 import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
@@ -38,7 +38,6 @@ const Footer = () => {
                   <a href="tel:976919191">+998976919191</a>
                 </div>
               </div>
-
               {/* social handle */}
               <div className="flex items-center gap-3 mt-6">
                 <a href="#">
@@ -52,7 +51,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
             {/* Footer Links section */}
             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
               <div>

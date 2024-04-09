@@ -11,7 +11,7 @@
   },
   "navbar": {
     "home": "Home",
-    "services": "Services",
+    "howworks": "How it works",
     "contact": "Request demo",
     "login": "Login"
   },
@@ -34,5 +34,14 @@
   "footer": {
     "heading": "We provide with ads analytics",
     "location": "Street Tinchlik, Kokand city, Fergana Region"
+  },
+  "how": {
+    "heading": "How it works?",
+    "subheading": "We analyse your brand ads with ai",
+    "first": "Ads on led screen",
+    "two": "Data gathering using video camera",
+    "three": "Detecting eye vision with ai",
+    "four": "Dashboard data analytics"
+
   }
 }
