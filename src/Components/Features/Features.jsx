@@ -1,6 +1,7 @@
 import './Features.css'
 import ai from '../../assets/website/ais.svg'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom';
 const Features = () => {
   const { t } = useTranslation()
   const { heading, cardheading, cardheading2, cardheading3, button } = t('feature')
@@ -81,12 +82,12 @@ const Features = () => {
                 <div className="grid place-items-center"> {data.icon}</div>
                 <h1 className="text-2xl">{data.name}</h1>
                 <p>{data.description}</p>
-                <a
-                  href={data.link}
-                  className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
+                <Link
+                  to="/howtoworks"
+                  className="text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
                 >
                   {t(button)}
-                </a>
+                </Link>
               </div>
             ))}
           </div>

@@ -56,16 +56,13 @@ const Navbar = () => {
             </NavLink>
             <BtnLang />
             <a
-              className={`md:my-0 my-6 font-semibold`}
+              className="md:my-0 my-6 primary-btn font-light p-2 px-4 md:px-8"
               href="https://dashboard.naqdvision.uz/auth/login"
             >
-              <button className="primary-btn font-light p-2 px-4 md:px-8">
-                {t(login)}
-              </button>
+              {t(login)}
             </a>
           </div>
         </div>
-        {/* button */}
       </div>
       <div className="md:mr-5 mr-10">
         <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
