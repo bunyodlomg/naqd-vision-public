@@ -1,11 +1,10 @@
-import i18next from "i18next";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import bg from "../../assets/website/ai.webp";
 import { Link } from "react-router-dom";
+import TextAnimation from "../TextAnimation/TextAnimation";
 
 const Hero = () => {
   const { t } = useTranslation();
-  const { line1, line2 } = t("description");
 
   return (
     <>
@@ -16,9 +15,10 @@ const Hero = () => {
             <div className="order-2 sm:order-1 space-y-5 lg:pr-20 relative">
               <h1
                 data-aos="fade-up"
-                className="text-3xl md:text-6xl font-extrabold"
+                className="text-3xl md:text-6xl font-extrabold text-gray-800 dark:text-slate-100"
               >
-                {t("heading")}
+                <TextAnimation text={t("heading")} />
+
               </h1>
 
               <p

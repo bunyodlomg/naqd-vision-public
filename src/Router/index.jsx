@@ -7,25 +7,27 @@ import React from 'react'
 import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar/Navbar";
 import NotFound from "../pages/NotFound/NotFound";
-
+import { HelmetProvider } from 'react-helmet-async';
 function Routers() {
   return (
-    <Fragment>
-      <Navbar />
-      <main className="main">
-        <Routes>
-          {/* Public routes */}
-          {routes.map(({ path, Component }) => (
-            <Route key={path} path={path} element={<Component />} />
-          ))}
-          {/* Not Found */}
-          {<Route path="*" element={<NotFound />} />}
-        </Routes>
-      </main>
-      {
-        <Footer />
-      }
-    </Fragment >
+    <>
+      <HelmetProvider>
+        <Navbar />
+        <main className="main">
+          <Routes>
+            {/* Public routes */}
+            {routes.map(({ path, Component }) => (
+              <Route key={path} path={path} element={<Component />} />
+            ))}
+            {/* Not Found */}
+            {<Route path="*" element={<NotFound />} />}
+          </Routes>
+        </main>
+        {
+          <Footer />
+        }
+      </HelmetProvider>
+    </ >
   );
 }
 
