@@ -17,7 +17,7 @@ const Hero = () => {
                 data-aos="fade-up"
                 className="text-3xl md:text-6xl font-extrabold text-gray-800 dark:text-slate-100"
               >
-                <TextAnimation text={t("heading")} />
+                {t("heading")} 
 
               </h1>
 
