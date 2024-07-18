@@ -28,7 +28,6 @@ const Hero = () => {
               >
                 {t("subheading")}
               </p>
-              {/* <h1>{i18next.t('welcome')}</h1> */}
               <div className="flex gap-6 z-10">
                 <Link to={'https://dashboard.naqdvision.uz/auth/login'}
                   data-aos="fade-up"
