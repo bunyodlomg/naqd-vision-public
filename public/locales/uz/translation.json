@@ -3,6 +3,11 @@
   "subheading": "O'z mijozlaringizni aniqlang va ularni samarali tarzda yo'naltiring",
   "click": "Ro'yhatdan o'tish",
   "hero": "Brendingizning sifatli reklama tahlili",
+  "rating_title": "Reyting",
+  "rating_t_1": "joylashuv",
+  "rating_t_2": "mashinalar soni",
+  "rating_t_3": "odamlar soni",
+  "rating_t_4": "barchasi",
   "subhero": "Brendingiz reklama ko'rsatkichlarini kuzatib boring!",
   "description": {
     "line1": "Veb service xizmati",

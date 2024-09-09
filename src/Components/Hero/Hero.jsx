@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import bg from "../../assets/website/ai.webp";
 import { Link } from "react-router-dom";
-import TextAnimation from "../TextAnimation/TextAnimation";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -18,9 +17,7 @@ const Hero = () => {
                 className="text-3xl md:text-6xl font-extrabold text-gray-800 dark:text-slate-100"
               >
                 {t("heading")} 
-
               </h1>
-
               <p
                 className="text-[20px] text-slate-600 dark:text-white"
                 data-aos="fade-up"

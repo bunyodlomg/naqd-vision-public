@@ -2,13 +2,17 @@
   "heading": "Revolutionize Your Ad Strategy with AI Insights",
   "subheading": "Understand your audience and target them effectively",
   "click": "Login",
-
   "hero": "We help your brand grow",
   "subhero": "Track your brand ads analytics with our AI powered service",
   "description": {
     "line1": "web services",
     "line2": "web services awailable"
   },
+  "rating_title": "Raiting",
+  "rating_t_1": "location",
+  "rating_t_2": "car count",
+  "rating_t_3": "person count",
+  "rating_t_4": "all",
   "navbar": {
     "home": "Home",
     "howworks": "How it works",
@@ -20,7 +24,6 @@
     "cardheading": "Real time video analytics",
     "cardheading2": "Data analytics",
     "cardheading3": "Tracking dashboard data",
-
     "button": "Learn more"
   },
   "contact": {
@@ -42,6 +45,5 @@
     "two": "Data gathering using video camera",
     "three": "Detecting eye vision with ai",
     "four": "Dashboard data analytics"
-
   }
 }
